@@ -6,18 +6,21 @@
 
 ## Features
 
-- **Environment Configuration:** Clone the project repository, create a virtual environment (optional but recommended), and install the necessary dependencies using a requirements.txt file
-- **Application Development:** Import the necessary libraries, configure the logging level to suppress information and warning messages, and configure the style of the application to have a dark background and white text. Create the user interface with Streamlit, allowing file uploads and displaying details of the uploaded file. Implement logic to convert PDFs to Word and Word to PDFs based on the type of file uploaded, and provide buttons to download the converted files.
-- **Running and deploying the application:** Run the application locally using Streamlit and create a repository on GitHub to upload the project's code, documenting it in a README.md file and including installation and usage instructions.
-- **Maintenance and Upgrade:** Monitor and resolve issues reported on GitHub, and keep dependencies up to date to ensure project compatibility and security.
+- **Installing resources and libraries:** Installs the docxtpl and python-docx libraries required to work with Word document templates.
+- **Upload Word template:** Upload the Word document template that will be used to generate the reports and define constant information that will be included in each report, such as name, phone number, email and date.
+- **Read data from Excel file:** Read student data and grades from an Excel file for later extraction into the text document.
+- **Generate and save individual reports:** For each student, extract their grades and generate a personalized report in Word format from a python loop that identifies each of the labels.
+- **Save a test document:** Generate and save a test document with the constant information.
 
 ## Technologies used
-- **Streamlit:** Framework for creating interactive web applications in Python.
-- **pypandoc:** Library to convert files between different formats using Pandoc.
-- **pdf2docx:** Library to convert PDF files to Word documents.
-- **docx2pdf:** Library to convert Word documents to PDF files.
+
+- **Python:** Programming language used to write the automation script, providing the foundation for the project and enabling data manipulation and document generation.
+- **Pandas:** Python library for data manipulation and analysis, used to read and handle data from the Excel file containing student grades.
+- **Datetime:** Python module for working with dates and times, allowing the current date to be obtained and formatted for inclusion in the reports.
+- **Docxtpl:** Python library for creating and manipulating Word documents using templates, facilitating the generation of personalized Word documents from a template and specific data.
+- **Python-docx:** Python library for creating, modifying, and extracting information from Word documents, complementing docxtpl in manipulating Word documents, although docxtpl is the main tool used in this project.
 
 ## **Documentation**
-! https://www.youtube.com/watch?v=H0c0P4NVtFQ&t=143s
-! https://www.youtube.com/watch?v=Ps0F19XkTmg
-! https://www.e-iceblue.com/es/doc/Python-Convert-Word-to-PDF.html
+! https://www.youtube.com/watch?v=8XXpheZ8uRs&t=533s
+! https://www.youtube.com/watch?v=T4up6ePInXg
+! https://medium.com/@ejeraldo/python-para-automatizar-excel-y-word-cf3c37c44c56
